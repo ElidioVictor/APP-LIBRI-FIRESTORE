@@ -22,14 +22,38 @@
 
     </body>
 
-    // IMPORT DO SDK DO FIREBASE
+    <!-- IMPORT DO SDK DO FIREBASE -->
     <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
 
-    // IMPORT DO SDK DO FIRESTORE
+    <!-- IMPORT DO SDK DO FIRESTORE -->
     <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
 
-    //Dados de acesso ao firebase 
-    <script></script>
+    <!-- Dados de acesso ao firebase  -->
+    <!-- apagar antes de subir no git -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAhrWtabKjQjg3xzB3pZmW_blmfLBQVZNk",
+            authDomain: "app-libri-joaoelidio.firebaseapp.com",
+            projectId: "app-libri-joaoelidio",
+            storageBucket: "app-libri-joaoelidio.appspot.com",
+            messagingSenderId: "796640286029",
+            appId: "1:796640286029:web:bc43bdceeca08c2ba8d304",
+            measurementId: "G-FB09CJY4PL"
+        };
+
+        /* inicializa o fireBase */
+    firebase.initializeApp(firebaseConfig);
+
+        /*inicializa a conexão com o fireStore*/
+    const db = firebase.firestore();
+
+        /*teste da conexão com o banco firestore*/
+    // console.log(db);
+    // console.log("LOL")
+        
+    </script>
+
+    
 
     <script src="app.js"></script>
 
